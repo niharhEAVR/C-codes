@@ -7,8 +7,8 @@ int sum(){
 }
 
 int main(){
-    int res;
-    res=sum();
-    printf("result: %d",res);
+    int result;
+    result=sum();
+    printf("result: %d",result);
     return 0;
 }

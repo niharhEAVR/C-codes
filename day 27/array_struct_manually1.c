@@ -1,7 +1,8 @@
 /*
 TODO: Write a program to store the information of 5
 students in a structure. The information of each
-student includes roll number and name. The program should display the information of all the students.
+student includes roll number and name.
+The program should display the information of all the students.
 */
 #include<stdio.h>
 #include<string.h>
@@ -12,7 +13,7 @@ struct student{
 };
 int main(){
 
-        struct student st1 = {10, "Nihar debnath"};
+    struct student st1 = {10, "Nihar debnath"};
     printf("\nRoll No:%d,Name:%s", st1.rollNo, st1.name);
 
     struct student st2 = {20, "Snehal das"};

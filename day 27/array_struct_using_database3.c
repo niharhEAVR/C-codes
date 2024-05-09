@@ -17,7 +17,7 @@ int main()
     struct student st6[3] = {
         {10,"koushik patra"}, //0th index of the array
         {20, "soumyajit khan"}, //1th index
-        {30, "nunu"} //2nd index
+        {30, "Biswajit Naskar"} //2nd index
     };
 
     printf("\nRoll No: %d, Name: %s\n\n", st6[1].rollNo, st6[1].name); // it is used for specific person and 1 is the index value
@@ -27,6 +27,5 @@ int main()
         printf("\nRoll No: %d, Name: %s", st6[i].rollNo, st6[i].name);
     }
 
-
-
+    return 0;
 }

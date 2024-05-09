@@ -21,9 +21,8 @@ struct employee
 {
     int empID;
     char empName[30];
-    // struct date of joining (d.o.j)
     // nested structure
-    struct date doj;
+    struct date doj; // struct date of joining (d.o.j)
 };
 
 int main()
@@ -31,17 +30,17 @@ int main()
 
     struct employee e1;
     e1.empID = 101;
-    strcpy(e1.empName, "Sonu Jaiswal");
+    strcpy(e1.empName, "Bijan Debnath");
     e1.doj.dd = 10;
-    e1.doj.mm = 11;
-    e1.doj.yy = 2014;
+    e1.doj.mm = 02;
+    e1.doj.yy = 2023;
 
     struct employee e2;
     e2.empID = 102;
-    strcpy(e2.empName, "Monu Jaiswal");
+    strcpy(e2.empName, "Asit Chowdhry");
     e2.doj.dd = 21;
     e2.doj.mm = 02;
-    e2.doj.yy = 2022;
+    e2.doj.yy = 2012;
 
     printf("The ID of the employee is: %d\n",e1.empID);
     printf("The Name of employee is: %s\n",e1.empName);

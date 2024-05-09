@@ -16,9 +16,9 @@ int main()
 {
     // array of objects user input
     
-    struct student st[30];
+    struct student st[10];
     int i;
-    for(i=0;i<3;i++)
+    for(i=0;i<5;i++)
     {
         printf("\n\nEnter the Roll No of a student: \n");
         scanf("%d",&st[i].rollNo);
@@ -29,8 +29,9 @@ int main()
         fflush(stdin);
     }
 
-    for(i=0;i<3;i++)
+    for(i=0;i<5;i++)
     {
+        fflush(stdin);
         printf("\nRoll No: %d, Name: %s", st[i].rollNo, st[i].name);
     }
     

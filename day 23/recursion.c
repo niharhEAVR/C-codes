@@ -14,6 +14,6 @@ int main()
 {
     int r;
     r = sum(5, 4);
-    printf("The sum is: %d", r);
+    printf("The result is: %d", r);
     return 0;
 }

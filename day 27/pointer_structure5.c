@@ -13,8 +13,7 @@ struct student
 // write a function to display all the above information - define
 void displayStudent(struct student *ptr, int n)
 {
-    int i;
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         printf("\n");
         printf("Student Name: %s\n", ptr[i].name);
@@ -27,9 +26,8 @@ int main()
 {
     struct student st[100];
     int n = 0;
-    int i;
 
-    for (i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++)
     {
         printf("Enter the Roll No of a student: \n");
         scanf("%d", &st[i].roll);

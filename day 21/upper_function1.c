@@ -12,7 +12,7 @@ int main()// calling function
     /* function calling */
     sum(); // these are called function
     printf("\n");
-    sum();
+    sum(); // Function Modularity
  
     return 0;
 }
