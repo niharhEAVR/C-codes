@@ -1,5 +1,5 @@
-// develop a C program to copy the content of 1 text 
-// file into another text file
+// develop a C program to copy the content of 1 text file
+// into another text file
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -14,7 +14,7 @@ int main()
         perror("Problem");
         exit(1); // or return 1;
     }else{
-        destination=fopen("f2.txt","a");
+        destination=fopen("f2.txt","w");
         if(destination==NULL){
             perror("Problem");
             return 1;

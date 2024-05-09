@@ -1,5 +1,5 @@
-// develop a C program to merge the content of 2 text 
-// file into third text file
+// develop a C program to merge the content of 2 texts
+// and store into third text file
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -12,7 +12,7 @@ int main()
     fp2=fopen("file-2.txt","r");
     fp3=fopen("file-3.txt","a");
 
-    if(fp1==NULL||fp2==NULL||fp3==NULL){
+    if(fp1==NULL||fp2==NULL){
         perror("Problem");
         exit(1); // or return 1;
     }else{

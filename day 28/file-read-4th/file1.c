@@ -1,13 +1,12 @@
-// wap in c to create and open a file
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 int main()
 {
-    FILE *fp; // FILE structure define
+    FILE *fp; 
     char ch;
     fp=fopen("file.txt","r"); // file create and open 
-    // w is for write
+    // r is for read
 
     if(fp==NULL){
         perror("Problem");

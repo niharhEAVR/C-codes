@@ -1,11 +1,11 @@
-// wap in c to create and open a file
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 
-FILE *fp; // globally created for use anywhere
-char choice; // globally created for use anywhere
-char ch; // globally created for use anywhere
+FILE *fp;       // globally created for use anywhere
+char choice;    // globally created for use anywhere
+char ch;        // globally created for use anywhere
+
 char mainLogic(char choice)
 {
     switch (choice)
@@ -40,8 +40,8 @@ int main()
         printf("Enter 'c' to read only first character & enter 'a' to read all the information store to a file: ");
         scanf("%c", &choice);
         mainLogic(choice); // function called
-        fclose(fp);
     }
+    fclose(fp);
 
     return 0;
 }

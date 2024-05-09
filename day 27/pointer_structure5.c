@@ -5,15 +5,15 @@ TODO: CREATE A STRUCTURE AS A ARGUMENT OF A FUNCTION
 // define the structure
 struct student
 {
-    char name[30]; // 0th index
-    int roll;      // 1th
-    int marks;     // 2nd
+    char name[30]; 
+    int roll;      
+    int marks;     
 };
 
 // write a function to display all the above information - define
 void displayStudent(struct student *ptr, int n)
 {
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < 3; i++)
     {
         printf("\n");
         printf("Student Name: %s\n", ptr[i].name);
@@ -41,7 +41,7 @@ int main()
         n = n + 1;
     }
 
-    displayStudent(st, n); // call
+    displayStudent(st,n); // call
 
     return 0;
 }
