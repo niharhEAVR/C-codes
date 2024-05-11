@@ -7,7 +7,7 @@ int main()
     float root1, root2;
 
     printf("Enter the three coefficient value:\n");
-    scanf("%d%d%d", &a, &b, &c);
+    scanf("%f%f%f", &a, &b, &c);
 
     // root part
     root_part = sqrt((b * b) - (4 * a * c));
