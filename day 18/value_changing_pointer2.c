@@ -2,7 +2,7 @@
 int main()
 {   
 
-    int a = 10, b = 20;
+    int a = 10, b = 30;
     int *p=&a, *q=&b;
     printf("a=%d\n", a);
     *p = 20;
