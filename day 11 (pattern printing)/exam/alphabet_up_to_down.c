@@ -1,3 +1,8 @@
+// a  
+// a  b  
+// a  b  c  
+// a  b  c  d  
+// a  b  c  d  e
 #include<stdio.h>
 int main()
 {
