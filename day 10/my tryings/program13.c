@@ -9,9 +9,7 @@ int main()
     while(f>=10){
         f /= 10;
     }
-    while(l>=10){
-        l %= 10;
-    }
+    l %= 10;
     r = f+l;
     printf("The sum of first and last digit of the number is: %d",r);
     return 0;

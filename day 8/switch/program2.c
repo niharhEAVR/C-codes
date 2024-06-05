@@ -5,6 +5,7 @@ int main()
     int mn,y;
     printf("Enter the year: ");
     scanf("%d",&y);
+    int flag = (y%4==0) ? 0 : 1;
     
     printf("1.January\n2.February\n3.March\n4.April\n5.May\n6.June\n7.July\n8.August\n9.September\n10.October\n11.November\n12.December\n");
     printf("Enter your choice: ");
@@ -15,12 +16,14 @@ int main()
         printf("January have 31 days.");
         break;
         case 2:
-        if (y%4==0)
-        {
-            printf("The February month have 29 days.");
-        }else{
+            switch (flag)
+            {
+            case 1:
             printf("The February month have 28 days.");
-        }
+            break;
+            default:
+            printf("The February month have 29 days.");
+            }
         break;
         case 3:
         printf("March have 31 days.");

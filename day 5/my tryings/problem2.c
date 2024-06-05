@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    double ai,it,ta,da,pf,mi;
+    double annualIncome,incomeTax,TA,DA,PF,monthlyIncome;
     printf("Enter your Annual Income: ");
-    scanf("%lf",&ai);
-    it = (ai*0.15);
-    mi = (ai/12);
-    ta = (mi*0.1);
-    da = (mi*0.1);
-    pf = (mi*0.05);
-    printf("Your income tax on annual income is:%.2lf\n",it);
-    printf("Your TA on monthly income is:%.2lf\n",ta);
-    printf("Your DA on monthly income is:%.2lf\n",da);
-    printf("Your PF on monthly income is:%.2lf",pf);
+    scanf("%lf",&annualIncome);
+    incomeTax = (annualIncome*0.15);
+    monthlyIncome = (annualIncome/12);
+    TA = (monthlyIncome*0.1);
+    DA = (monthlyIncome*0.1);
+    PF = (monthlyIncome*0.05);
+    printf("Your income tax on annual income is:%.2lf\n",incomeTax);
+    printf("Your TA on monthly income is:%.2lf\n",TA);
+    printf("Your DA on monthly income is:%.2lf\n",DA);
+    printf("Your PF on monthly income is:%.2lf",PF);
 
     return 0;
 }

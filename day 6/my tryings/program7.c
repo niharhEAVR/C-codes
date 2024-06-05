@@ -12,6 +12,9 @@ int main()
     if(isalpha(ch)){
         printf("The character is alphabet.");
     }
+    // else if(character >= '0' && character <= '9'){
+    //     printf("The %c is a Digit.",character);
+    // }
     else if(isdigit(ch)){
         printf("The character is digit.");
     }

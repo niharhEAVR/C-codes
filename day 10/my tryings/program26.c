@@ -15,7 +15,7 @@ int main()
         count++;
     }
     // another method to store the number of digits of num in n
-    // for (originalNum = num; originalNum != 0; ++n) {
+    // for (originalNum = num; originalNum != 0; ++count) {
     //     originalNum /= 10;
     // }
     

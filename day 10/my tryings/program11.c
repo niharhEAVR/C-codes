@@ -7,9 +7,11 @@ int main() {
     scanf("%d", &number);
 
     // Iterate until number becomes single digit
-    while (number >= 10) {
-        number %= 10;
-    }
+    // while (number >= 10) {
+    //     number %= 10;
+    // }
+
+    number %= 10;
 
     printf("The last digit of the original number is: %d\n", number);
 
