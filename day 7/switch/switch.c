@@ -16,3 +16,7 @@ int main()
     }
     return 0;
 }
+
+
+
+//  always use the default at very last of the switch case statement

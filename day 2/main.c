@@ -34,13 +34,16 @@ int main()
 	char c = 'a';
 	long int li = 769928123;
 	short int si = 12;
+	char string = '\t';
 	
 	printf("The value of i: %d\n",i);
 	printf("The value of f: %.1f\n",f);
 	printf("The value of db: %.5lf\n",db);
 	printf("The value of c: %c\n",c);
 	printf("The value of li: %ld\n",li);
-	printf("The value of si: %d\n\n\n\n",si);
+	printf("The value of si: %d\n",si);
+	printf("The value of string: %c",string);
+	printf("\\This is how its working\n\n\n\n");
 	
 	//6.
 	printf("The size of variable i is: %d\n",sizeof(i));
@@ -48,10 +51,24 @@ int main()
 	printf("The size of variable db is: %d\n",sizeof(db));
 	printf("The size of variable c is: %d\n",sizeof(c));
 	printf("The size of variable li is: %d\n",sizeof(li));
-	printf("The size of variable si is: %d\n",sizeof(si));
+	printf("The size of variable si is: %d\n\n\n\n",sizeof(si));
 
-	
-		
+
+
+
+	int pa, pt, pe, po;
+
+	pa = pt = pe = po = 45;
+
+	printf("%d\n",pa);
+	printf("%d\n",pt);
+	printf("%d\n",pe);
+	printf("%d\n",po);
+
+
+
+
+
 	return 0;
 	
 }

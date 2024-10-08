@@ -20,6 +20,11 @@ int main()
     scanf("%d", &num2);
     //operation
     r1 = num1 +  num2;
+
+    // '=' , '+' is a operator
+    // num1, num1 is operands
+    // r1 is a result
+
     r2 = num1 -  num2;
     r3 = num1 /  num2;
     r4 = num1 *  num2;

@@ -21,6 +21,5 @@ int main()
     {
         printf("%d\n", rollNo[i]);
     }
-
     return 0;
 }
