@@ -1,0 +1,10 @@
+1. *Hello World*: Write a program to print "Hello, World!" on the screen.
+2. *Sum of Numbers*: Write a program to take two numbers as input and print their sum.
+3. *Factorial Finder*: Write a program to find the factorial of a given number.
+4. *Odd or Even*: Write a program to determine if a given number is odd or even.
+5. *Find the Largest*: Write a program to find the largest among three numbers.
+6. *Palindrome Checker*: Write a program to check if a given word or phrase is a palindrome.
+7. *Prime Number Checker*: Write a program to check if a given number is prime or not.
+8. *Simple Calculator*: Write a program to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
+9. *Count Vowels*: Write a program to count the number of vowels in a given string.
+10. *Guess the Number*: Write a program to create a simple game where the user has to guess a randomly generated number.
