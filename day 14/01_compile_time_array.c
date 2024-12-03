@@ -3,7 +3,7 @@ int main()
 {
     // compile time example
     int rollno[6] = {1,2,3,4};
-    // range: 0 to (n-1)=4
+    // range: 0 to (n-1)=5
     //printf("%d",rollno[3]);
 
     // Traversal algorithm

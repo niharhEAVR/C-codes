@@ -14,7 +14,7 @@ int main()
     }
     printf("the value of the array is:\n");
     //ALGORITHM: Traversal algorithm
-    for (int i = 0; i<num; i++) // i=0 1 2 3 4 5
+    for (int i = 0; i<num; i++) // i=0 1 2 3 4 
     {
         printf("%d\t", rollNo[i]); // 1 2 3 4 5
     }
