@@ -8,6 +8,8 @@ int main()
     printf("%d\t\t%d\t\t%d",*--p,*--p,*++p);
     //  printf("%d\t%d\t%d",*++p,*p--,*p++);
 
+    // printf() follows the right to left sequence
+
 
     return 0;
 }
