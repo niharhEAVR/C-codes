@@ -18,5 +18,5 @@ int main()
 }
 
 
-
+// switch case only takes int and char values, no string or float
 //  always use the default at very last of the switch case statement

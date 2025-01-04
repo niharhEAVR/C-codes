@@ -51,7 +51,8 @@ int main()
 	printf("The size of variable db is: %d\n",sizeof(db));
 	printf("The size of variable c is: %d\n",sizeof(c));
 	printf("The size of variable li is: %d\n",sizeof(li));
-	printf("The size of variable si is: %d\n\n\n\n",sizeof(si));
+	printf("The size of variable si is: %d\n",sizeof(si));
+	printf("The size of variable string is: %d\n\n\n\n",sizeof(string));
 
 
 
