@@ -12,8 +12,8 @@ int main()
         {
         case 1:
             printf("You gussed correct\n");
+            exit(1); // you will see a small req cross in the terminal
             break;
-            exit(1);
         default:
             printf("You gussed wrong\n");
             break;
