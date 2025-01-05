@@ -1,30 +1,29 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 int main()
 {
-    FILE *fp; 
+    FILE *fp;
     char ch;
-    fp=fopen("file.txt","r"); // file create and open 
+    fp = fopen("file.txt", "r"); // file create and open
     // r is for read
 
-    if(fp==NULL){
+    if (fp == NULL)
+    {
         perror("Problem");
         exit(1);
-    }else{
-
-    ch = fgetc(fp); // file read
-    
-    while(ch != EOF) //EOF = END OF FILE -> MACROS IN C
+    }
+    else
     {
-        printf("%c",ch);
-        ch = fgetc(fp);
+
+        while (ch != EOF) // EOF = END OF FILE -> MACROS IN C
+        {
+            printf("%c", ch);
+            ch = fgetc(fp);
+        }
+
+        fclose(fp);
     }
-
-    fclose(fp);
-    }
-
-
 
     return 0;
 }

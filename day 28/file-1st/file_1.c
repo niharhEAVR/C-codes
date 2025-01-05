@@ -7,7 +7,7 @@ int main()
     // w is for write
 
      
-    fp=fopen("C:/Users/com/Desktop/C codes/day 28/file-1st/f2.txt","w");
+    fp=fopen("D:/My_Workings/C-codes/day 28/file-1st/f2.txt","w");
     // This address is showing that you can store the created file anywhere in  your computer.
     // All you have to do is collect the address as shown in the image (address.png)
     // Then exchange the all backslash with forward slash (\ => /)
