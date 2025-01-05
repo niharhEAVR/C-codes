@@ -16,6 +16,7 @@ int main() {
         printf("Enter name of student %d: ", i + 1);
         scanf("%s", students[i].name);
         printf("Enter marks of student %d: ", i + 1);
+        fflush(stdin);
         scanf("%d", &students[i].marks);
     }
 

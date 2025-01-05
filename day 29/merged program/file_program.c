@@ -1,37 +1,43 @@
-// develop a C program to merge the content of 2 texts
-// and store into third text file
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-FILE *fp1, *fp2, *fp3;
-char ch;
-int main()
-{
-    fp1=fopen("file-1.txt","r");
-    fp2=fopen("file-2.txt","r");
-    fp3=fopen("file-3.txt","a");
-
-    if(fp1==NULL||fp2==NULL){
-        perror("Problem");
-        exit(1); // or return 1;
-    }else{
-        // file 1
-        ch=fgetc(fp1);
-        while(ch!=EOF){
-            fputc(ch,fp3);
-            ch=fgetc(fp1);
-        }
-        // file 2
-        ch=fgetc(fp2);
-        while(ch!=EOF){
-            fputc(ch,fp3);
-            ch=fgetc(fp2);
-        }
-        printf("File succesfully merged. \n");
-        fclose(fp1);
-        fclose(fp2);
-        fclose(fp3);
+// Function to copy content from one file to another
+void copyFileContent(FILE *source, FILE *destination) {
+    char ch;
+    while ((ch = fgetc(source)) != EOF) {
+        fputc(ch, destination);
     }
+}
+
+int main() {
+    FILE *fp1, *fp2, *fp3;
+
+    // Open files
+    fp1 = fopen("file-1.txt", "r");
+    fp2 = fopen("file-2.txt", "r");
+    fp3 = fopen("file-3.txt", "a"); // Use "w" to overwrite
+
+    // Check if files opened successfully
+    if (fp1 == NULL || fp2 == NULL || fp3 == NULL) {
+        perror("Error opening files");
+        if (fp1) fclose(fp1);
+        if (fp2) fclose(fp2);
+        if (fp3) fclose(fp3);
+        exit(1);
+    }
+
+    // Copy content from file-1 to file-3
+    copyFileContent(fp1, fp3);
+
+    // Copy content from file-2 to file-3
+    copyFileContent(fp2, fp3);
+
+    printf("Files successfully merged into file-3.txt.\n");
+
+    // Close all files
+    fclose(fp1);
+    fclose(fp2);
+    fclose(fp3);
+
     return 0;
 }
